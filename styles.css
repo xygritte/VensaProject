@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+nav {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use Flexbox for the list */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #e67e22; /* Change color on hover */
+}
+
+.logo {
+    height: 50px; /* Set the height of the logo */
+    margin-right: 20px; /* Space between logo and nav */
+    align-self: center; /* Center the logo vertically */
+}
+
+.hero {
+    background-image: url('tokyo.jpg'); /* Updated image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative; /* Position relative for the overlay */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero::before {
+    content: ""; /* Empty content for the overlay */
+    position: absolute; /* Position absolute to cover the hero */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.hero h1 {
+    font-size: 3em; /* Increase font size for the main heading */
+    margin: 0; /* Remove default margin */
+}
+
+.hero p {
+    font-size: 1.2em; /* Increase font size for the paragraph */
+}
+
+.cta-btn {
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions for background, scale, and shadow */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.cta-btn:hover {
+    background: #d95d0e; /* Darken button on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.tours {
+    padding: 50px 20px;
+}
+
+.tour-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-card {
+    background: #444;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.tour-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.tour-card .cta-btn {
+    background: #444; /* Background for tour card buttons */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.tour-card .cta-btn:hover {
+    background: #555; /* Darken tour card button on hover */
+    transform: scale(1.05); /* Slightly enlarge tour card button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.inspiration {
+    background: #222;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
