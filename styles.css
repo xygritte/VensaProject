@@ -127,6 +127,27 @@ h2 {
     color: #666;
 }
 
+.disclaimer {
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    background-color: #FF7F50;
+}
+
+.disclaimer-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disclaimer-caption {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
 /* INTRODUCTION SECTION */
 .introduction {
      background: url('bg-blob-blue.svg') no-repeat center center/cover;
@@ -178,22 +199,135 @@ button:hover {
     color: white;
 }
 
-/* FOOTER */
-footer {
-    background: #FF7F50;
-    color: white;
+.practice-section {
+    max-width: 900px;
+    margin: 50px auto;
     padding: 20px;
-    margin-top: 50px;
+    text-align: center;
 }
 
-footer h3 {
-    font-size: 1.5rem;
+.practice-section p {
+    color: #ff5e3a;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.practice-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.module-card {
+    background: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff5e3a;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+}
+
+.module-card:hover {
+    scale: 1.05;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.module-card h3 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.module-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Section Bonus */
+.bonus-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+    color: white;
+    background: url('bg-01-free-img.jpg') no-repeat center center/cover;
+}
+
+
+
+.bonus-container {
+    display: flex;
+    gap: 20px;
+}
+
+.bonus-card {
+    background: transparent;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.bonus-card h3 {
+    font-size: 20px;
     font-weight: bold;
 }
 
-footer p {
-    font-size: 1rem;
+.btn {
     margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+/* Text di sebelah kanan */
+.text-container {
+    max-width: 400px;
+    margin-left: 40px;
+}
+
+.text-container h4 {
+    color: white;
+    font-size: 14px;
+}
+
+.text-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    text-align: center;
+    font-size: 14px;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -210,5 +344,33 @@ footer p {
 
     .intro-imageNcaption img {
         width: 500px;
+    }
+
+    .bonus-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .bonus-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bonus-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
