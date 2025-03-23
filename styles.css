@@ -224,6 +224,13 @@ button:hover {
     margin: 20px auto;
 }
 
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+
 .modules-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -345,6 +352,8 @@ button:hover {
     .intro-imageNcaption img {
         width: 500px;
     }
+
+   
 
     .bonus-section {
         flex-direction: column;
