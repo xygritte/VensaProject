@@ -267,68 +267,6 @@ button:hover {
     color: #666;
 }
 
-/* Section Bonus */
-.bonus-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7rem;
-    color: white;
-    background: url('bg-01-free-img.jpg') no-repeat center center/cover;
-}
-
-
-
-.bonus-container {
-    display: flex;
-    gap: 20px;
-}
-
-.bonus-card {
-    background: transparent;
-    border: 2px solid white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 250px;
-}
-
-.bonus-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background: gray;
-}
-
-/* Text di sebelah kanan */
-.text-container {
-    max-width: 400px;
-    margin-left: 40px;
-}
-
-.text-container h4 {
-    color: white;
-    font-size: 14px;
-}
-
-.text-container h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
 /* Footer */
 .footer {
     display: flex;
