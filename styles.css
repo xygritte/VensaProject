@@ -302,6 +302,11 @@ button:hover {
         margin-right: 0px;
     }
 
+    .introduction{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
     .intro-imageNcaption {
         flex-direction: column;
     }
